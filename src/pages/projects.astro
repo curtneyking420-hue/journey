@@ -1,0 +1,34 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Projects</h1>
+
+      <p>These are the ideas, books, systems, and experiments I am building through Journey to Greatness.</p>
+
+      <h2>There's Two Boats</h2>
+      <p>A historical book project exploring hidden Black history, lost choices, survival, power, and legacy.</p>
+
+      <h2>Universal Mechanics</h2>
+      <p>A personal framework for studying systems, science, reality, and how the world connects.</p>
+
+      <h2>NYC Pavement Digital Twin</h2>
+      <p>A project focused on predicting street failure using traffic, salt, water, utility cuts, and pavement conditions.</p>
+
+      <h2>AI Comic-to-Movie System</h2>
+      <p>A future tool idea for turning comics, books, and stories into animated AI video experiences.</p>
+    </main>
+    <Footer />
+  </body>
+</html>
