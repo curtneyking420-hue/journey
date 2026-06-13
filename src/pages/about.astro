@@ -1,37 +1,42 @@
-<h1>About Me</h1>
 
-<p>
-My name is Curtney King. I am a New York City asphalt worker, creator, builder, and lifelong learner.
-</p>
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
 
-<p>
-I believe growth comes from discipline, curiosity, and a willingness to build things that others never attempt.
-</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>About Me</h1>
 
-<p>
-Through Journey to Greatness, I document ideas, projects, books, and experiments that explore history, technology, science, finance, and personal development.
-</p>
+      <p>My name is Curtney King. I am a New York City asphalt worker, creator, builder, and lifelong learner.</p>
 
-<p>
-Some of my work includes:
-</p>
+      <p>I believe growth comes from discipline, curiosity, and a willingness to build things that others never attempt.</p>
 
-<ul>
-  <li>There's Two Boats: The Lost Choices of Black History</li>
-  <li>Universal Mechanics</li>
-  <li>NYC Pavement Digital Twin</li>
-  <li>AI Comic-to-Movie System</li>
-</ul>
+      <p>Through Journey to Greatness, I document ideas, projects, books, and experiments that explore history, technology, science, finance, and personal development.</p>
 
-<p>
-My mission is simple:
-</p>
+      <p>Some of my work includes:</p>
 
-<p>
-<strong>"We Don't Work The Same."</strong>
-</p>
+      <ul>
+        <li>There's Two Boats: The Lost Choices of Black History</li>
+        <li>Universal Mechanics</li>
+        <li>NYC Pavement Digital Twin</li>
+        <li>AI Comic-to-Movie System</li>
+      </ul>
 
-<p>
-This website serves as a record of the journey, the lessons learned, and the ideas still being built.
-</p>
+      <p>My mission is simple:</p>
 
+      <p><strong>"We Don't Work The Same."</strong></p>
+
+      <p>This website serves as a record of the journey, the lessons learned, and the ideas still being built.</p>
+    </main>
+    <Footer />
+  </body>
+</html>
