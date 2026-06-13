@@ -1,32 +1,46 @@
-<main>
-  <h1>Journey to Greatness</h1> 
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
 
-  <p>
-    Welcome to my digital journal.
-  </p>
+<!doctype html>
+<html lang="en">
+<head>
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
 
-  <p>
-    My name is Curtney King. I am a New York City asphalt worker,
-    creator, builder, and lifelong learner.
-  </p>
+<body>
+  <Header />
 
-  <p>
-    This website documents ideas, books, systems, and experiments
-    focused on history, science, technology, finance, and personal growth.
-  </p>
+  <main>
+    <h1>Journey to Greatness</h1>
 
-  <p>
-    Current projects include:
-  </p>
+    <p>Welcome to my digital journal.</p>
 
-  <ul>
-    <li>There's Two Boats</li>
-    <li>Universal Mechanics</li>
-    <li>NYC Pavement Digital Twin</li>
-    <li>AI Comic-to-Movie System</li>
-  </ul>
+    <p>
+      My name is Curtney King. I am a New York City asphalt worker,
+      creator, builder, and lifelong learner.
+    </p>
 
-  <p>
-    <strong>We Don't Work The Same.</strong>
-  </p>
-</main>
+    <p>
+      This website documents ideas, books, systems, and experiments
+      focused on history, science, technology, finance, and personal growth.
+    </p>
+
+    <p>Current projects include:</p>
+
+    <ul>
+      <li>There's Two Boats</li>
+      <li>Universal Mechanics</li>
+      <li>NYC Pavement Digital Twin</li>
+      <li>AI Comic-to-Movie System</li>
+    </ul>
+
+    <p><strong>We Don't Work The Same.</strong></p>
+  </main>
+
+  <Footer />
+</body>
+</html>
